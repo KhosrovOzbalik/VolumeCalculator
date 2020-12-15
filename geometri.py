@@ -1,13 +1,17 @@
 def sekil():
     global hs
-    pistr = input("Enter pi:")
-    try:
-        pi = float(pistr)
-    except:
-        print("Please enter a valid number.")
-        quit()
+    import math
+    pistr = input("Enter pi\n(Write 'pi' for the real value of pi.): ")
+    if pistr == "pi":
+        pi = math.pi
+    else:
+        try:
+            pi = float(pistr)
+        except:
+            print("Please enter a valid number.")
+            quit()
     girdi = input("Which volume do you want to calculate? \n""E.g: prism,cylinder,pyramid,cone,cube \n"
-                  "(All of them is regular shapes.) pi=3:")
+                  "(All of them is regular shapes.):")
     if girdi == "prism":
         kenarsayisi = input("Enter the shape of base:\n(3,4,5,6...)")
         try:
