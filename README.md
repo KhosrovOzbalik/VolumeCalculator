@@ -1,2 +1,2 @@
 # VolumeCalculator
-A simple python code for calculating the volume of an object.
+A simple python code to calculate the volume of an object.
